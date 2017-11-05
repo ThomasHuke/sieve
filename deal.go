@@ -16,8 +16,8 @@ type Number0 struct {
 
 //
 func (n0 Number0) DealWith(src string) (string, error) {
-	_, err := regexp.MatchString(Pattern["number0"], src)
-	if err == nil {
+	b, err := regexp.MatchString(Pattern["number0"], src)
+	if b == true {
 		return src, err
 	} else {
 		return "error", err
@@ -30,8 +30,8 @@ type Number1 struct {
 
 //
 func (n1 Number1) DealWith(src string) (string, error) {
-	_, err := regexp.MatchString(Pattern["number1"], src)
-	if err == nil {
+	b, err := regexp.MatchString(Pattern["number1"], src)
+	if b == true {
 		return src, err
 	} else {
 		return "error", err
