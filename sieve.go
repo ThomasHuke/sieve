@@ -7,15 +7,11 @@ import (
 
 //Sieve 主文件。使用这个筛查器可以很好的检查要检查的东西。
 //type的命名使用int格式。在doc中会有详细的介绍。
-func Control(ty Sie, tyN int, src string) (string, error) {
-	src, err := ty.DealWith(tyN, src)
+func Control(ty Sie, src string) (string, error) {
+	src, err := ty.DealWith(src)
 	if err != nil {
 		fmt.Println(err)
 		return "error", err
 	}
 	return src, nil
-}
-
-type number0 {
-    src string
 }

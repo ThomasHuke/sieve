@@ -2,5 +2,5 @@
 package sieve
 
 type Sie interface {
-	DealWith(ty int, src string) (string, error)
+	DealWith(src string) (string, error)
 }
