@@ -2,6 +2,6 @@
 package sieve
 
 var Pattern = map[string]string{
-	"number0": "",
-	"number1": "",
+	"number0": "^\\w+@\\w+\\.\\w+$",
+	"number1": "^\\w+$",
 }
